@@ -1,64 +1,81 @@
-// "use strict";
+// // "use strict";
 
-// // let numder = 5;
-// // // console.log(4/0);
+// // // let numder = 5;
+// // // // console.log(4/0);
 
+// // // const obj = {
+// // // name:"Alex",
+// // // age: 25,
+// // // isMarried: false
+
+// // // }
+// // // console.log(obj.name);
+
+// // // let arr = [
+// // //   'plum.png', 'orange.png', 'apple.bmp', 5
+// // // ]
+// // // console.log(arr[1]);
+
+// // const arr = [1, 2, 3];
+
+// // const arrObj = {
+// //   a: 1,
+// //   1: 2,
+// //   2: 3,
+// // };
+
+// // arrObj.b = '1112'
+// // arrObj['b'] = 1111
+
+// // console.log(arrObj['b']);
+// // console.log(arrObj.b);
+// // // const obj = { a: 1, b: 2 };
 // // const obj = {
-// // name:"Alex",
-// // age: 25,
-// // isMarried: false
+// //   Anna: 500,
+// //   Alice: 800,
+// // };
 
-// // }
-// // console.log(obj.name);
+// // alert('sdfsdffs')
 
-// // let arr = [
-// //   'plum.png', 'orange.png', 'apple.bmp', 5
-// // ]
-// // console.log(arr[1]);
+// // const result = confirm('Ты тут?')
+// // console.log(result);
 
-// const arr = [1, 2, 3];
+// // const answer = +prompt('Вам есть 18?', '18')
+// // console.log(answer +5);
 
-// const arrObj = {
-//   a: 1,
-//   1: 2,
-//   2: 3,
-// };
+// // const answers= [];
+// // answers[0] = prompt('Как ваше имя?', '')
+// // answers[1] = prompt('Как ваше фамилия?', '')
+// // answers[0] = prompt('Сколько вам лет?', '')
+// // document.write(answers)
 
-// arrObj.b = '1112'
-// arrObj['b'] = 1111
+// let incr = 10,
+//   decr = 10;
 
-// console.log(arrObj['b']);
-// console.log(arrObj.b);
-// // const obj = { a: 1, b: 2 };
-// const obj = {
-//   Anna: 500,
-//   Alice: 800,
-// };
+// // ++incr
+// // --decr
+// console.log(incr++, decr--);
+// console.log(incr++, decr--);
+// console.log(++incr, --decr);
 
-// alert('sdfsdffs')
+// const isChecked = true,
+//       isClose = true;
 
-// const result = confirm('Ты тут?')
-// console.log(result);
+//         console.log(isChecked&&isClose);
 
-// const answer = +prompt('Вам есть 18?', '18')
-// console.log(answer +5);
+const numberOfFilms = +prompt('Сколько фильмов вы посмотрели?')
+const personalMovieDb = {
+  count: numberOfFilms,
+  movies:{},
+  actor: {},
+  genres:[],
+  privat: false
+}
+let film = prompt(`Один из последних фильмов?`)
+let ocenka = prompt(`На сколько оцените его?`)
+let c = prompt(`Один из последних фильмов?`)
+let d = prompt(`На сколько оцените его?`)
 
-// const answers= [];
-// answers[0] = prompt('Как ваше имя?', '')
-// answers[1] = prompt('Как ваше фамилия?', '')
-// answers[0] = prompt('Сколько вам лет?', '')
-// document.write(answers)
-
-let incr = 10,
-  decr = 10;
-
-// ++incr
-// --decr
-console.log(incr++, decr--);
-console.log(incr++, decr--);
-console.log(++incr, --decr);
-
-const isChecked = true,
-      isClose = true;
-
-        console.log(isChecked&&isClose);
+console.log(personalMovieDb);
+personalMovieDb.movies[film] = ocenka
+personalMovieDb.movies[c] = d
